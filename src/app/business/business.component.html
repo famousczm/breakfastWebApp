@@ -1,0 +1,49 @@
+<div  *ngFor="let business of businesses">
+  <div class="container center">
+    <div class="business">
+      <div class="row row-sticky">
+        <div class="col-sm-8">
+          <a [routerLink]="['/product', business.id]"
+             class="businessHeader businessHeader-entry"
+             [ngStyle]="{'background-image':'url('+business.imgUrl+')'}">
+            <div class="businessHeader_heading">
+              <h1 class="businessHeader_name">
+                {{ business.name }}
+              </h1>
+              <p class="businessHeader_desc">
+                {{ business.desc }}
+              </p>
+            </div>
+            <div class="businessHeader_actions">
+              <div class="businessHeader_eating">
+                月售<strong>{{ business.eatingNum }}</strong>单
+              </div>
+              <div class="pull-right">
+                <app-stars></app-stars>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <div class="businessTalks_container">
+            <a class="businessTalks_talk">
+              <p>{{ getComments(business.id).commentBody }}</p>
+              <div class="businessTalks_user">
+                <div class="media">
+                  <div class="media-left">
+                    <img class="media_object img-circle" [src]="getUser(getComments(business.id).userId).userImg">
+                  </div>
+                  <div class="media-body">
+                    <h4>{{ getUser(getComments(business.id).userId).userName }}</h4>
+                    <p>{{ getComments(business.id).timestamp }}</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

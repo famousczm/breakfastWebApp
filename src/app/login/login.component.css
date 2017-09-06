@@ -1,0 +1,110 @@
+/*.navbar-default{
+	background-color: rgba(255, 205, 0, 0.75);
+	color: white;
+}*/
+
+.breakfast_container{
+  height: 100% !important;
+}
+.main{
+  padding: 100px 10px 20px;
+  max-width: 270px;
+  margin: 0 auto;
+}
+.main .main_logo{
+  text-align: center;
+}
+.main .main_logo img{
+  vertical-align: middle;
+}
+
+.main .main_content{
+  padding: 30px 0 0;
+}
+
+form{
+   display: block;
+   margin-top: 0em;
+ }
+
+.form-group{
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.has-danger .form-control-danger{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d9534f' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E");
+}
+.has-danger .form-control{
+  border-color: #d9534f;
+}
+
+.form-control-success, .form-control-warning, .form-control-danger{
+  padding-right: 2.25rem;
+  background-repeat: no-repeat;
+  background-position: center right 0.52344rem;
+  background-size: 1.54688rem 1.54688rem;
+}
+
+.form-control{
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.form-control-error{
+  margin-top: 0.25rem;
+  color: #D9534F;
+}
+
+a, button, input, label, select{
+  touch-action: manipulation;
+}
+a{
+  text-decoration: none;
+  color: #757575;
+}
+
+.form-check{
+  position: relative;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.btn-markedness{
+  color: #fff;
+  background-color: #FFCD00;
+  border-color: #FFCD00;
+}
+
+.btn-block{
+  display: block;
+  width: 100%;
+}
+
+.btn{
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-secondary{
+  color: #292b2c;
+  background-color: #FFED00;
+  border-color: #ccc;
+}
+.btn-secondary:disabled{
+  background-color: #ccc;
+  border-color: #999;
+}
+
+
+

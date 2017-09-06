@@ -1,0 +1,57 @@
+<div class="breakfast_container">
+  <div class="main">
+    <div class="main_logo">
+      <img src="../../assets/images/logo/logo.png" />
+    </div>
+    <div class="main_content">
+      <form novalidate [formGroup]="formModel" (ngSubmit)="onSubmit()">
+        <div class="form-group" [class.has-danger]="formModel.get('username').invalid && formModel.get('username').touched">
+          <input type="text"
+                 placeholder="电话/邮箱/用户名"
+                 class="form-control form-control-danger"
+                 formControlName="username"/>
+          <div [hidden]="formModel.get('username').valid || formModel.get('username').untouched">
+            <div [hidden]="!formModel.hasError('required', 'username')"
+                 [class.form-control-error]="formModel.get('username').invalid && formModel.get('username').touched">
+              用户名不能为空
+            </div>
+          </div>
+        </div>
+        <div class="form-group" [class.has-danger]="formModel.get('password').invalid && formModel.get('password').touched">
+          <input type="password"
+                 placeholder="密码"
+                 class="form-control form-control-danger"
+                 formControlName="password"/>
+          <div [hidden]="formModel.get('password').valid || formModel.get('password').untouched">
+            <div [hidden]="!formModel.hasError('required', 'password')"
+                 [class.form-control-error]="formModel.get('password').invalid && formModel.get('password').touched">
+              密码不能为空
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <a href="javascript:;" class="pull-right">
+            找回密码
+          </a>
+          <div class="form-check" style="overflow: hidden;">
+            <label class="form-check-label">
+              <input type="checkbox" name="remember" value class="form-check-input" />记住我
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-markedness btn-block">登录</button>
+        </div>
+        <div class="form-group text-center">
+          <a [routerLink]="['/auth']" class="text-muted">
+            使用社交平台账号登录
+          </a>
+          <br />
+          <a [routerLink]="['/register']" class="text-muted">
+            注册账号
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

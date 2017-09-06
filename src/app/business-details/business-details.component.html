@@ -1,0 +1,79 @@
+<div class="container width-all">
+  <div class="wrapper">
+    <div class="business_details_header" style="background-image: url('../../assets/images/businessImg/business01.jpg')">
+      <div class="business_details_header_cover"></div>
+      <div class="business_details_header_imgContainer">
+        <div class="business_details_header_imgContainer_img">
+          <img alt="###" src="../../assets/images/businessImg/business01.jpg"/>
+        </div>
+      </div>
+      <div class="business_details_header_cover business_details_header_cover-second"></div>
+      <div class="business_details_inner">
+        <div class="business_details_text">
+          <h1 class="business_name">{{ business.name }}</h1>
+          <p class="business_desc">{{ business.desc }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-xs-6" *ngFor="let product of products">
+          <div class="business_details">
+            <div class="business_details_img">
+              <a href="###">
+                <img alt="###" [src]="product.productImg">
+              </a>
+            </div>
+            <div class="business_details_text">
+              <h4>
+                <a href="###">{{ product.productName }}</a>
+              </h4>
+              <p class="sell">月售 {{ product.eatingNum }}份</p>
+              <div class="price_sell">
+                <div class="price">
+                  {{ product.productPrice }}元
+                </div>
+                <a href="javascript:" class="add"></a>
+                <!--<span class="status">休息中</span>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comments_backdrop">
+      <div class="container">
+        <div id="z_commentsOutterContainer">
+          <div class="comments_container">
+            <div id="z_commentsContainer">
+              <div class="comments_info">
+                共{{ commentsLength }}条评论
+              </div>
+              <p style="margin: 20px 0;">
+                如要评论，请先<a [routerLink]="['/login']">登录</a>
+              </p>
+              <ul class="media-list comments">
+                <li class="media-block" *ngFor="let comment of comments">
+                  <div class="media-left">
+                    <img [src]="getUser(comment.userId).userImg" class="img-circle"/>
+                  </div>
+                  <div class="media-body">
+                    <p class="comment_name">
+                      <strong>{{ getUser(comment.userId).userName }}</strong>
+                    </p>
+                    <p class="comment_body">
+                      {{ comment.commentBody }}
+                    </p>
+                    <p class="comment_bottom">
+                      <span>{{ comment.timestamp }}</span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

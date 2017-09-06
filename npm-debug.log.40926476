@@ -1,0 +1,47 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Git\\Nodejs\\node.exe',
+1 verbose cli   'D:\\Git\\Nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.4
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle breakfast@0.0.0~prestart: breakfast@0.0.0
+6 silly lifecycle breakfast@0.0.0~prestart: no script for prestart, continuing
+7 info lifecycle breakfast@0.0.0~start: breakfast@0.0.0
+8 verbose lifecycle breakfast@0.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle breakfast@0.0.0~start: PATH: D:\Git\Nodejs\node_modules\npm\bin\node-gyp-bin;D:\Git\Nodejs\breakfast\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\JAVA\JDK\bin;D:\JAVA\JDK\jre\bin;D:\Git\Nodejs\;D:\Android\sdk;D:\Android\sdk\tools;D:\Android\sdk\build-tools;D:\Android\sdk\platform-tools;D:\Git\git\bin;C:\Users\柱铭\AppData\Local\Microsoft\WindowsApps;C:\Users\柱铭\AppData\Roaming\npm;D:\PHP\AppServ\Apache24\bin;D:\PHP\AppServ\php5;D:\PHP\AppServ\MySQL\bin;
+10 verbose lifecycle breakfast@0.0.0~start: CWD: D:\Git\Nodejs\breakfast
+11 silly lifecycle breakfast@0.0.0~start: Args: [ '/d /s /c', 'ng serve' ]
+12 silly lifecycle breakfast@0.0.0~start: Returned: code: 1  signal: null
+13 info lifecycle breakfast@0.0.0~start: Failed to exec start script
+14 verbose stack Error: breakfast@0.0.0 start: `ng serve`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (D:\Git\Nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (D:\Git\Nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid breakfast@0.0.0
+16 verbose cwd D:\Git\Nodejs\breakfast
+17 error Windows_NT 10.0.15063
+18 error argv "D:\\Git\\Nodejs\\node.exe" "D:\\Git\\Nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+19 error node v6.9.4
+20 error npm  v3.10.10
+21 error code ELIFECYCLE
+22 error breakfast@0.0.0 start: `ng serve`
+22 error Exit status 1
+23 error Failed at the breakfast@0.0.0 start script 'ng serve'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the breakfast package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     ng serve
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs breakfast
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls breakfast
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

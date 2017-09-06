@@ -1,0 +1,224 @@
+.width-all{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.center{
+  height: 200px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.wrapper{
+  background: #fff;
+}
+
+.business_details_header{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #999 50% 50% repeat;
+  color: #fff;
+  text-align: center;
+  z-index: 0;
+  overflow: hidden;
+  margin-bottom: 23px;
+}
+.business_details_header .business_details_header_cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: #000;
+  opacity: 0.55;
+}
+.business_details_header .business_details_header_cover-second{
+  opacity: 0.3;
+  z-index: 0;
+}
+.business_details_header .business_details_header_imgContainer{
+  height: 100%;
+  overflow: hidden;
+}
+.business_details_header .business_details_header_imgContainer .business_details_header_imgContainer_img{
+  position: relative;
+  right: 250%;
+  width: 600%;
+  height: 100%;
+}
+.business_details_header .business_details_inner{
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  table-layout: fixed;
+}
+.business_details_header .business_details_inner .business_details_text{
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-shadow: 0px 1px 2px #333;
+}
+
+.business_name{
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+.business_details_header .business_details_inner .business_details_text p{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10%;
+  max-width: 800px;
+}
+
+.business_details{
+  display: block;
+}
+.business_details .business_details_img{
+  padding-bottom: 56.25%;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+}
+.business_details .business_details_img>a>img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  border: none;
+}
+.business_details .business_details_text{
+  height: 130px;
+  overflow: hidden;
+}
+.business_details h4{
+  position: relative;
+  margin: 10px 0;
+  color: #686868;
+  font-weight: bold;
+  max-height: 40px;
+  line-height: 20px;
+  padding-left: 15px;
+}
+.business_details h4::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 25px;
+  background: #d9534f;
+}
+
+a{
+  color: #888;
+}
+.business_details .business_details_text .sell{
+  color: #909090;
+  display: block;
+}
+
+.business_details .business_details_text .price_sell{
+  margin-top: 3px;
+}
+.business_details .business_details_text .price_sell .price{
+  font-size: 19px;
+  color: #ff5a5a;
+  font-weight: 700;
+  float: left;
+}
+.business_details .business_details_text .price_sell .status{
+  float: right;
+  display: block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #b5b5b5;
+  color: #fff;
+}
+
+.add{
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background: url(http://xs01.meituan.net/waimai_web/img/restaurant/add-cart.svg) 100% no-repeat;
+  float: right;
+}
+
+.comments_backdrop{
+  padding: 30px 0;
+  background: #f2f2f2;
+}
+
+.comments_container{
+  color: #909090;
+  margin-top: 23px;
+}
+
+.comments_backdrop .comments_info{
+  border-bottom: 2px solid #f0f0f0;
+  line-height: 2.2;
+  margin-bottom: 20px;
+  border-bottom-width: 1px;
+  border-bottom-color: #e3e3e3;
+}
+
+.comments{
+  margin: 15px 0 0;
+}
+
+.comments li{
+  margin-bottom: 15px;
+}
+.comments li .media-left img{
+  width: 30px;
+  height: 30px;
+}
+.comments li .comment_name{
+  color: #909090;
+  margin-top: 0;
+}
+.comments li .comment_name strong{
+  color: #d9534f;
+}
+.comments li .comment_body{
+  color: #686868;
+  word-break: break-all;
+}
+.comments li .comment_bottom{
+  font-size: 12px;
+  color: #aaaaaa;
+}
+.comments li .comment_bottom span{
+  margin-right: 5px;
+}
+.comments li p{
+  margin: 5px 0;
+}
+
+
+
+
+/*.big-image{*/
+  /*height: 400px;*/
+  /*margin-bottom: 23px;*/
+  /*overflow: hidden;*/
+/*}*/
+/*.big-image .item{*/
+  /*height: 400px;*/
+/*}*/
+/*.big-image .item img{*/
+  /*width: 100%;*/
+/*}*/

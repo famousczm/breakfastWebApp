@@ -1,0 +1,90 @@
+a{
+  color: #888;
+}
+.business{
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+.businessHeader-entry{
+  display: block;
+  text-decoration: none !important;
+  color: #fff !important;
+  margin: 0;
+  padding: 15px;
+}
+.businessHeader{
+  position: relative;
+  z-index: 0;
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.businessHeader .businessHeader_heading{
+
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+.businessHeader .businessHeader_actions{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.businessHeader-entry h1.businessHeader_name{
+  font-size: 21px;
+  font-weight: 800;
+}
+.businessHeader .businessHeader_desc{
+  font-size: 12px;
+  margin-bottom: 0;
+  max-height: 36px;
+  overflow: hidden;
+}
+.businessHeader-entry .businessHeader_eating{
+  font-size: 14px;
+  line-height: 1;
+}
+.businessTalks_talk{
+  padding: 15px;
+  padding-bottom: 0;
+  font-size: 12px;
+  text-decoration: none !important;
+}
+.businessTalks_talk>h3{
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  line-height: 15px;
+  height: 15px;
+  overflow: hidden;
+  font-weight: 800;
+}
+.businessTalks_talk>p{
+  margin: 0;
+  line-height: 18px;
+  height: 36px;
+  overflow: hidden;
+}
+.businessTalks_talk .businessTalks_user{
+  margin-top: 13px;
+}
+.businessTalks_talk .businessTalks_user img{
+  width: 30px;
+  height: 30px;
+}
+.businessTalks_talk .businessTalks_user h4{
+  margin: 0 0 1px 0;
+  font-size: 12px;
+}
+.businessTalks_talk .businessTalks_user p{
+  margin: 0;
+  color: #aaa;
+}
+
+.row-sticky{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-sm-8{
+  padding: 0;
+}
+

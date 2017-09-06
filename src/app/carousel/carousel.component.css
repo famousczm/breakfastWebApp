@@ -1,0 +1,13 @@
+.carousel{
+  height: 400px;
+  margin-bottom: 23px;
+}
+.carousel .item{
+  height: 400px;
+}
+.carousel .item img{
+  width: 100%;
+}
+.carousel-control.left, .carousel-control.right{
+  background-image: none;
+}
